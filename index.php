@@ -10,32 +10,27 @@
     </script>
     <link href="css/styles.css" rel="stylesheet" type="text/css" media="all" />
   </head>
-
   <body>
     <form action="php/admin.php" method="POST">
       <div class="admin-login">
         <input type="submit" name="admin" value="Admin" id="admin" />
       </div>
     </form>
-
     <h1 class="main-heading">Student Feedback Form</h1>
-
     <div class="container">
       <h3>
         Fill this student feedback form so that we can make our teaching better.
       </h3>
-
       <form action="php/feedback.php" method="post" class="student-form">
         <div class="student-details">
           <label for="year">Academic Year</label>
           <select name="year" id="year">
+            <option value="2025">2025</option>
             <option value="2024">2024</option>
             <option value="2023">2023</option>
             <option value="2022">2022</option>
-            <option value="2021">2021</option>
           </select>
           <br />
-
           <label for="sem">Semester</label>
           <select name="sem" id="sem">
             <option value="1st">Sem 1</option>
@@ -48,35 +43,34 @@
             <option value="8th">Sem 8</option>
           </select>
           <br />
-
           <label for="date">Date of Feedback</label>
           <input type="date" id="date" name="date" />
           <br />
-
           <label for="branch">Branch</label>
           <select name="branch" id="branch">
             <option value="CSE">CSE</option>
             <option value="ECE">ECE</option>
+            <option value="IS">IS</option>
           </select>
           <br />
-
           <label for="section">Section</label>
           <select name="section" id="section">
             <option value="A">Sec A</option>
             <option value="B">Sec B</option>
+            <option value="C">Sec C</option>
           </select>
           <br />
-
           <label for="subject">Subject</label>
           <select name="subject" id="subject">
-            <option value="OOPS">Object Oriented Programming</option>
-            <option value="DSA">Data Structures and Algorithms</option>
-            <option value="MI">Microprocessors</option>
-            <option value="AS">Applied Science</option>
+            <option value="DBMS">Database Management System</option>
+            <option value="ATC">Automata therory and computability</option>
+            <option value="ME">Management ,Entrepreneurship for IT industry</option>
+            <option value="ADP">Application Development using python</option>
+            <option value="CNS">Computer Network Laboratory</option>
+            <option value="UP">Unix Programming</option>
           </select>
           <br />
         </div>
-
         <div class="student-feedback">
           <!-- Question 1 -->
           <h4>
@@ -275,7 +269,6 @@
           <textarea name="remarks" rows="5"></textarea>
           <br /><br />
         </div>
-
         <div class="submit-form">
           <input type="submit" name="submit" value="Submit" id="submit" />
         </div>
@@ -283,7 +276,7 @@
       <br />
     </div>
     <div class="copyright-text">
-      <p>© Copyright Anushka Chauhan 2021</p>
+      <p>© Copyright Kushal and Mohith Rangan 2022</p>
     </div>
   </body>
 </html>
